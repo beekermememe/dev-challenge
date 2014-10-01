@@ -1,0 +1,27 @@
+===========================
+Dev-Challenge
+
+This code was written as part of a code challenge. I needed to return
+
+1) Most improved batting average( hits / at-bats) from 2009 to 2010.  Only include players with at least 200 at-bats.
+2) Slugging percentage for all players on the Oakland A's (teamID = OAK) in 2007. 
+3) Who was the AL and NL triple crown winner for 2011 and 2012.  If no one won the crown, output "(No winner)"
+
+===========================
+
+To Run:
+* bundle
+* ruby -Ilib lib/runner.rb
+
+To Run Specs (should include coverage data):
+* rspec
+
+Some comments
+
+(1) I did not use a DB of any type.
+(2) I try not to use obscure ruby tricks, they may be neat but can obscure what you are doing.
+(3) My main thought was to decouple some of the more complex operations (Triple Crown and Improved logic) into their own classes instead of overloading the player/team classes.
+(4) I did not do any performance tuning and there are probably a number of areas that we could hit but for the moment it works and is not too slow.
+(5) Used simpleCov to make sure I was ok with coverage. There are some classes that could do with some extra love but overall pretty good.
+
+

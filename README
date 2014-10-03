@@ -24,4 +24,12 @@ Some comments
 (4) I did not do any performance tuning and there are probably a number of areas that we could hit but for the moment it works and is not too slow.
 (5) Used simpleCov to make sure I was ok with coverage. There are some classes that could do with some extra love but overall pretty good.
 
+OK REWRITE -- DONT WRITE CODE AT 2am, YOU JUST WANT TO GET IT DONE, IT'LL BE BAD!!!!!
+
+To Run Specs (should include coverage data):
+* rspec -Ilib2/ -Ispec/lib2 spec/lib spec/lib2
+
+I rewrote some of the classes and they are in lib2. Main things is just keep it simple. So far the number of lines of code are alot less -- KISS
+
+
 

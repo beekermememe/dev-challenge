@@ -20,9 +20,6 @@ class PlayerYearStat2
     if self.ab.to_i > 0
       slugging_percentage = (self.h.to_i - self._2b.to_i - self._3b.to_i - self.hr.to_i) +
                             (2* self._2b.to_i) + (3*self._3b.to_i) + (4*self.hr.to_i)
-      slugging_percentage += (2* self._2b.to_i)
-      slugging_percentage += (3*self._3b.to_i)
-      slugging_percentage += (4*self.hr.to_i)
       slugging_percentage = slugging_percentage.to_f / self.ab.to_f
     end
     slugging_percentage
